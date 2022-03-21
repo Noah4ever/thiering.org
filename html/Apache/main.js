@@ -1,7 +1,8 @@
 "use strict"
 
 let moveSpeedInput = document.getElementById("moveSpeed");
-let moveSpeed = 10;
+let moveSpeed = parseInt(moveSpeedInput.value);
+
 moveSpeedInput.addEventListener("change", (e) => {
     if(moveSpeedInput.value <= moveSpeedInput.max){
         moveSpeed = parseInt(moveSpeedInput.value);
@@ -10,7 +11,7 @@ moveSpeedInput.addEventListener("change", (e) => {
 let colorInput = document.getElementById("bg-color");
 colorInput.addEventListener("change", (e) => {
     document.getElementById("hex-color").innerText = colorInput.value;
-    document.getElementById("html").style.backgroundColor = colorInput.value;
+    document.documentElement.style.backgroundColor = colorInput.value;
 })
 
 
