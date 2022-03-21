@@ -29,7 +29,7 @@ a{
     color: var(--clr-text);
 }
 nav{
-    background-color: var(--clr-bg);
+    background-color: var(--clr-navbg);
 }
 svg{
     fill: var(--clt-svg);
@@ -42,7 +42,6 @@ svg{
     padding-inline-start: 0;
     padding: 1rem;
     background-color: var(--clr-bg);
-    border-radius: 0 0 25px 25px; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center; 
