@@ -13,7 +13,8 @@
     --clr-article-shadow-invert: rgb(248, 248, 248);
     --clr-shadow: rgb(224, 224, 224);
     --clr-text: rgb(25,25,25);
-    --clr-svg: rgb(30,30,30)
+    --clr-svg: rgb(30,30,30);
+    --clr-muted: rgb(187, 187, 187);
 }
 #dark-mode{
     --clr-bg: rgb(68, 67, 70);
@@ -25,6 +26,7 @@
     --clr-shadow: rgba(47, 47, 49, 0.904);
     --clr-text: rgb(240, 240, 240);
     --clr-svg: rgb(230, 230, 230);
+    --clr-muted: rgb(125, 125, 125);
 }
 
 html, body{ 
@@ -95,7 +97,28 @@ svg{
     background-color: rgba(35, 210, 0, 0.5);
     border: 1px solid rgb(35, 210, 0);
 }
-
+.added::marker{
+    content: '+ ';
+    color: rgb(0, 168, 0);
+}
+.changed::marker{
+    content: '~ ';
+    color: rgb(226, 150, 7);
+}
+.removed::marker{
+    content: '- ';
+    font-size: 1rem;
+    color: rgb(187, 9, 9);
+}
+.muted{
+    color: var(--clr-muted);
+}
+.timeline > .dates > h5{
+    margin-bottom: 5px;
+}
+.timeline > .dates > p{
+    margin-top: 7px;
+}
 article{
     padding: 10px 50px; 
     margin: 2rem auto;
