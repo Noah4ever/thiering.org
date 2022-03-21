@@ -7,16 +7,24 @@
 #light-mode{
     --clr-bg: rgb(243, 248, 251);
     --clr-navbg: rgb(250, 253, 255);
+    --clr-article: rgb(245, 245, 245);
+    --clr-article-hover: rgb(252, 252, 252);
+    --clr-article-shadow: rgb(224, 224, 224);
+    --clr-article-shadow-invert: rgb(248, 248, 248);
     --clr-shadow: rgb(224, 224, 224);
     --clr-text: rgb(25,25,25);
-    --clt-svg: rgb(30,30,30)
+    --clr-svg: rgb(30,30,30)
 }
 #dark-mode{
     --clr-bg: rgb(68, 67, 70);
     --clr-navbg: rgb(56, 56, 58);
+    --clr-article: rgb(61, 61, 61);
+    --clr-article-hover: rgb(66, 66, 66);
+    --clr-article-shadow: rgb(58, 58, 58);
+    --clr-article-shadow-invert: rgb(73, 73, 73);
     --clr-shadow: rgba(47, 47, 49, 0.904);
     --clr-text: rgb(240, 240, 240);
-    --clt-svg: rgb(230, 230, 230);
+    --clr-svg: rgb(230, 230, 230);
 }
 
 html, body{ 
@@ -39,7 +47,7 @@ nav{
     background-color: var(--clr-navbg);
 }
 svg{
-    fill: var(--clt-svg);
+    fill: var(--clr-svg);
 }
 #nav-ul{
     margin-block-start: 0;
@@ -48,11 +56,11 @@ svg{
     margin-inline-end: 0;
     padding-inline-start: 0;
     padding: 1rem;
-    background-color: var(--clr-bg);
+    background-color: var(--clr-navbg);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center; 
-    box-shadow: 0px 0px 0px 0px rgba(230, 230, 230, 0);
+    box-shadow: 0px 4px 5px 3px var(--clr-shadow);
 } 
 .nav-li > *{ 
     list-style: none;
@@ -69,4 +77,15 @@ svg{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     place-items: center;
     grid-gap: clamp(0rem, 0.5rem, 1rem);
+}
+
+article{
+    background-color: var(--clr-article);
+    box-shadow: 4px 4px 5px 3px var(--clr-article-shadow), -4px -4px 5px 3px var(--clr-article-shadow-invert);
+    width: 70%;
+    transition: all 200ms ease-in-out;
+}
+article:hover{
+    background-color: var(--clr-article-hover);
+    width: 71%;
 }
