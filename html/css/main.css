@@ -24,7 +24,6 @@ html, body{
     padding: 0;
     transition: background-color 45ms ease-in;
     background-color: var(--clr-bg);
-    background-color: red!important;
     color: var(--clr-text);
 }
 
