@@ -79,7 +79,26 @@ svg{
     grid-gap: clamp(0rem, 0.5rem, 1rem);
 }
 
+.status{
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 1px solid rgba(128, 128, 128, 1);
+    position: relative;
+    padding: 1px 5px;
+    top: -2px;
+    font-size: 0.75rem;
+}
+.in-progress{
+    background-color: rgba(235, 115, 0, 0.5);
+    border: 1px solid rgba(235, 115, 0, 1);
+}
+.gardening{
+    background-color: rgba(35, 210, 0, 0.5);
+    border: 1px solid rgb(35, 210, 0);
+}
+
 article{
+    padding: 10px 50px; 
+    margin: 2rem auto;
     background-color: var(--clr-article);
     box-shadow: 4px 4px 5px 3px var(--clr-article-shadow), -4px -4px 5px 3px var(--clr-article-shadow-invert);
     width: 70%;
@@ -87,5 +106,5 @@ article{
 }
 article:hover{
     background-color: var(--clr-article-hover);
-    width: 71%;
+    padding: 10px 60px;
 }
