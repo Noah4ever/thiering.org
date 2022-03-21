@@ -10,7 +10,7 @@
     --clr-article: rgb(245, 245, 245);
     --clr-article-hover: rgb(252, 252, 252);
     --clr-article-shadow: rgb(224, 224, 224);
-    --clr-article-shadow-invert: rgb(248, 248, 248);
+    --clr-article-shadow-invert: rgb(255, 255, 255);
     --clr-shadow: rgb(224, 224, 224);
     --clr-text: rgb(25,25,25);
     --clr-svg: rgb(30,30,30);
@@ -22,7 +22,7 @@
     --clr-article: rgb(61, 61, 61);
     --clr-article-hover: rgb(66, 66, 66);
     --clr-article-shadow: rgb(58, 58, 58);
-    --clr-article-shadow-invert: rgb(73, 73, 73);
+    --clr-article-shadow-invert: rgba(82, 82, 82, 0.432);
     --clr-shadow: rgba(47, 47, 49, 0.904);
     --clr-text: rgb(240, 240, 240);
     --clr-svg: rgb(230, 230, 230);
@@ -123,7 +123,7 @@ article{
     padding: 10px 50px; 
     margin: 2rem auto;
     background-color: var(--clr-article);
-    box-shadow: 4px 4px 5px 3px var(--clr-article-shadow), -4px -4px 5px 3px var(--clr-article-shadow-invert);
+    box-shadow: 4px 4px 7px 3px var(--clr-article-shadow), -4px -4px 7px 2px var(--clr-article-shadow-invert);
     width: 70%;
     transition: all 200ms ease-in-out;
 }
