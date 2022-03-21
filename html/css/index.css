@@ -17,6 +17,31 @@ article > p{
     padding: 10px 15px;
 }
 
+article > h2{
+    text-align: left;
+    padding-left: 1rem;
+}
+article > ul{
+    padding: 0;
+    text-align: left;
+    padding-left: 1rem;
+}
+article > ul > li{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+article > ul > li > a{
+    list-style: none;
+    text-decoration: underline;
+}
+.picture-list{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.picture-list > *{
+    width: 100%;
+}
 
 #grid-container{
     padding: 0 0 2rem 0;
