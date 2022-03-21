@@ -1,0 +1,17 @@
+html{
+    background-color: rgb(131, 131, 131);
+    color: aliceblue;
+}
+body{
+    overflow: hidden;
+}
+
+#apache{
+    position: absolute;
+    width: 100%;
+}
+
+#apache-gif{
+    width: 25%;
+    height: 25%;
+}
